@@ -20,6 +20,7 @@ services:
       - log:/unifi/log
       - cert:/unifi/cert
       - init:/unifi/init.d
+      - ./unifi-controller:/var/lib/unifi \
     environment:
       DB_URI: mongodb://mongo/unifi
       STATDB_URI: mongodb://mongo/unifi_stat
